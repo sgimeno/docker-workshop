@@ -22,6 +22,7 @@ Run an image
 ```
 $ docker run -p 3000:3000 my-image
 ```
+ + -d: dettached mode, will return a container ID
 
 List all containers
 ```
