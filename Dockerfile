@@ -1,4 +1,4 @@
-FROM node
+FROM node:6
 
 ADD . /code
 WORKDIR /code
