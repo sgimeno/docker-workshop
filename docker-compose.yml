@@ -1,0 +1,18 @@
+version: '2'
+services:
+  my-service:
+    container_name: 'my-service'
+    build:
+      context: .
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/code
+    depends_on:
+      - mongo
+  mongo:
+    container_name: mongo
+    image: mongo:3.0
+    command: "--smallfiles"
+    ports:
+      - 27017:27017
